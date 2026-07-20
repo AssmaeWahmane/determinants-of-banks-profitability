@@ -97,17 +97,28 @@ Interpretation of Results
 
 # 📂 Folder Structure
 
-```text
 stata/
 │
+├── README.md
+│
 ├── do_files/
+│   ├── 01_import_and_panel_setup.do
+│   ├── 02_preliminary_analysis.do
+│   ├── 03_fisher_homogeneity_test.do
+│   ├── 04_panel_model_estimation.do
+│   ├── 05_model_selection.do
+│   ├── 06_post_estimation_diagnostics.do
+│   └── 07_gls_estimation.do
 │
-├── logs/
-│
-├── output/
-│
-└── README.md
-```
+└── output/
+    ├── descriptive_statistics.xlsx
+    ├── correlation_matrix.xlsx
+    ├── panel_summary.xlsx
+    ├── fixed_effects_results.docx
+    ├── random_effects_results.docx
+    ├── hausman_test.txt
+    ├── diagnostic_tests.pdf
+    └── gls_results.docx
 
 ---
 
@@ -116,16 +127,13 @@ stata/
 The econometric analysis is organized into independent Stata scripts.
 
 ```text
-01_descriptive_statistics.do
-02_correlation_analysis.do
-03_fisher_homogeneity.do
-04_fixed_effects_model.do
-05_random_effects_model.do
-06_hausman_test.do
-07_breusch_pagan_test.do
-08_model_diagnostics.do
-09_gls_estimation.do
-10_results_interpretation.do
+01_import_and_panel_setup.do
+02_preliminary_analysis.do
+03_fisher_homogeneity_test.do
+04_panel_model_estimation.do
+05_model_selection.do
+06_post_estimation_diagnostics.do
+07_gls_estimation.do
 ```
 
 > **Note:** Depending on the final organization of the project, some analyses may be grouped into fewer scripts.
